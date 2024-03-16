@@ -78,7 +78,7 @@ To use the API, you can make requests to the defined endpoints using tools like 
 ### Products
 - `GET http://127.0.0.1:8000/products/`: Retrieve all products.
 - `GET http://127.0.0.1:8000/products/<id>/`: Retrieve a specific product.
-- `POST http://127.0.0.1:8000/products/`: Create a new product.
+- `POST http://127.0.0.1:8000/products/`: Create a new product and its variants.
 - `PUT http://127.0.0.1:8000/products/<id>/`: Update a specific product.
 - `DELETE http://127.0.0.1:8000/products/<id>/`: Delete a specific product.
 
