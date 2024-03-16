@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import *
 from django.http import Http404
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 
 class ProductView(APIView):        
     def post(self, request):
@@ -123,3 +123,5 @@ class ProductVariantViewDetails(APIView):
         obj = self.get_object(pk)
         obj.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+    
